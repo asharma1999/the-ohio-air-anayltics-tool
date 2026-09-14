@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -11,9 +12,9 @@
 	<groupId>com.github.asharma1999</groupId>
 	<artifactId>ohio-air-analysis</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name/>
-	<description/>
-	<url/>
+	<name>Ohio Air Analysis</name>
+	<description>Description</description>
+	<url>https://github.com/asharma1999/ohio-air-analysis</url>
 	<licenses>
 		<license/>
 	</licenses>
@@ -27,7 +28,7 @@
 		<url/>
 	</scm>
 	<properties>
-		<java.version>26</java.version>
+		<java.version>21</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -59,6 +60,11 @@
 			<artifactId>spring-boot-starter-webmvc-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -70,6 +76,11 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.11.0</version>
+				<configuration>
+					<source>21</source>
+					<target>21</target>
+				</configuration>
 				<executions>
 					<execution>
 						<id>default-compile</id>

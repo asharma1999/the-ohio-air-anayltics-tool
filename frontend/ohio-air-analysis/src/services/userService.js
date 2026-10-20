@@ -2,7 +2,7 @@ import axios from "axios";
 
 export async function getUsers() {
     const response = await axios.get(
-        "http://localhost:8080/api/users/getUsers"
+        "/api/users/getUsers"
     );
 
     return response.data;
@@ -10,7 +10,7 @@ export async function getUsers() {
 
 export async function saveUser(user) {
     const response = await axios.post(
-        "http://localhost:8080/api/users/save",
+        "/api/users/save",
         user
     );
 
